@@ -29,12 +29,12 @@ void getString_P()
             ptr = malloc(1024);  // Allocate 1024 bytes
         }
         
-//         if (ptr) {
-//             printf("Hello World from thread %d! (Memory allocated)\n", omp_get_thread_num());
-//             free(ptr);  // Free the allocated memory
-//         } else {
-//             printf("Hello World from thread %d! (Memory allocation failed)\n", omp_get_thread_num());
-//         }
+        if (ptr) {
+            printf("Hello World from thread (Memory allocated)\n");
+            free(ptr);  
+        } else {
+            printf("Hello World from thread (Memory allocation failed)\n");
+        }
     }
 }
 
@@ -55,12 +55,12 @@ void getString_HBM_P()
             ptr = hbw_malloc(1024);  // Allocate 1024 bytes from HBM
         }
         
-//         if (ptr) {
-//             printf("Hello World from thread %d! (HBM memory allocated)\n", omp_get_thread_num());
-//             hbw_free(ptr);  // Free the allocated memory
-//         } else {
-//             printf("Hello World from thread %d! (HBM memory allocation failed)\n", omp_get_thread_num());
-//         }
+        if (ptr) {
+            printf("Hello World from thread (HBM memory allocated)\n");
+            hbw_free(ptr);  // Free the allocated memory
+        } else {
+            printf("Hello World from thread (HBM memory allocation failed)\n");
+        }
     }
 }
 
