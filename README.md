@@ -59,9 +59,10 @@ hbwmalloc: ``-I$(HOME)/memkind/include``
 > ``` 
 > export LD_LIBRARY_PATH=~/USR/LIB:$LD_LIBRARY_PATH 
 > ```
-> ```diff
-> IMPORTANT! when switching from node to node always run it OR ./hello_world will throw an error
-> ```
+
+
+> IMPORTANT! when switching from node to node always run it OR ./hello_world will throw an ERROR.
+
 
 ## Results
 ### Default Node
