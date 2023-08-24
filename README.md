@@ -57,7 +57,7 @@ hbwmalloc: ``-I$(HOME)/memkind/include``
 ### Create new Environmental Variable
 > this variable specifies a list of directories where runtime **linker** should look for shared libraries.
 > ``` 
-> export LD_LIBRARY_PATH=~/USR/LIB:$LD_LIBRARY_PATH 
+> export LD_LIBRARY_PATH=~/usr/lib:$LD_LIBRARY_PATH 
 > ```
 
 
